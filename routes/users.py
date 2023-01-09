@@ -46,7 +46,8 @@ def read_one(id):
   read_tuple = (id,)
   cursor.execute(sql, read_tuple)
   user = cursor.fetchone()
-  response = { "userid":user[0], "username":user[1],"email":user[3], "created_on":user[4],"aten":user[5],"dinheiro":user[6],"npedidos":user[7],"NºclientesVip":user[8]}
+  response = { "userid":user[0], "username":user[1],"email":user[3], "created_on":user[4],"aten":user[5],"dinheiro":user[6],"npedidos":user[7],"NºclientesVip":user[8],"dinmensal":user[9]
+  ,"dinano":user[10]}
   return response, 200
 
 
